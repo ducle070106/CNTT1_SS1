@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Thư viện JS</title>
+</head>
+<body>
+
+    <h2>Chương trình chào mừng Thư viện</h2>
+
+    <script>
+
+        let tenThuVien = prompt("Vui lòng nhập tên thư viện của bạn:");
+        if (tenThuVien !== null && tenThuVien !== "") {
+            
+            let thongBao = "Chào mừng bạn đến với thư viện: " + tenThuVien;
+            console.log(thongBao);
+            document.write("<h3>" + thongBao + "</h3>");
+            
+        } else {
+            document.write("<h3>Bạn chưa nhập tên thư viện rồi!</h3>");
+        }
+    </script>
+
+</body>
+</html>

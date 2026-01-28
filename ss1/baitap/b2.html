@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý số lượng sách</title>
+</head>
+<body>
+
+    <h2>Quản lý Thư viện - Hệ thống nhập liệu</h2>
+
+    <script>
+
+        let inputSach = prompt("Mời bạn nhập số lượng sách hiện có:");
+        let soLuongSach = Number(inputSach);
+
+        if (isNaN(soLuongSach)) {
+            document.write("<p style='color: red;'>Lỗi: Vui lòng nhập một con số hợp lệ!</p>");
+        } else {
+       
+            let thongBao = "Thư viện hiện có " + soLuongSach + " cuốn sách.";
+            console.log(thongBao);
+            document.write("<h3>" + thongBao + "</h3>");
+        }
+    </script>
+
+</body>
+</html>

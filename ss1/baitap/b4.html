@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xử lý chuỗi tên sách</title>
+</head>
+<body>
+
+    <h2>Chương trình chuẩn hóa tên sách</h2>
+    <p>Mở <strong>Console (F12)</strong> để xem kết quả chi tiết.</p>
+
+    <script>
+       
+        let tenSachGoc = prompt("Mời bạn nhập tên cuốn sách:");
+        let tenVietThuong = tenSachGoc.toLowerCase();
+        let tenVietHoa = tenSachGoc.toUpperCase();
+        console.log("--- KẾT QUẢ XỬ LÝ CHUỖI ---");
+        console.log("Tên gốc: " + tenSachGoc);
+        console.log("Tên viết thường: " + tenVietThuong);
+        console.log("Tên viết hoa: " + tenVietHoa);
+        
+        document.write("<ul>");
+        document.write("<li><strong>Tên gốc:</strong> " + tenSachGoc + "</li>");
+        document.write("<li><strong>Tên viết thường:</strong> " + tenVietThuong + "</li>");
+        document.write("<li><strong>Tên viết hoa:</strong> " + tenVietHoa + "</li>");
+        document.write("</ul>");
+    </script>
+
+</body>
+</html>

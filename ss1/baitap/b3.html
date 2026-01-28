@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng số sách thư viện</title>
+</head>
+<body>
+
+    <h2>Hệ thống quản lý nhập sách</h2>
+
+    <script>
+   
+        let soSachCu = prompt("Nhập số lượng sách cũ:");
+        let soSachMoi = prompt("Nhập số lượng sách mới nhập kho:");
+        let so1 = Number(soSachCu);
+        let so2 = Number(soSachMoi);
+
+        let tongSoSach = so1 + so2;
+        console.log("Tổng số sách:", tongSoSach);
+        
+        document.write("<h3>Báo cáo kho sách:</h3>");
+        document.write("<p>- Số sách cũ: " + so1 + "</p>");
+        document.write("<p>- Số sách mới: " + so2 + "</p>");
+        document.write("<strong>=> Tổng số sách hiện tại là: " + tongSoSach + "</strong>");
+    </script>
+
+</body>
+</html>

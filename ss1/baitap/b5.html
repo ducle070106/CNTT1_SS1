@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi sách thư viện</title>
+</head>
+<body>
+
+    <h2>Chương trình Tính tuổi sách</h2>
+    <p>Kết quả chi tiết được hiển thị trong mục <strong>Console (F12)</strong>.</p>
+
+    <script>
+      
+        let tenSach = prompt("Nhập tên sách:");
+        let namXuatBanInput = prompt("Nhập năm xuất bản của sách:");
+        let namHienTaiInput = prompt("Nhập năm hiện tại:");
+        let namXuatBan = Number(namXuatBanInput);
+        let namHienTai = Number(namHienTaiInput);
+        let tuoiSach = namHienTai - namXuatBan;
+
+        console.log("--- THÔNG TIN CHI TIẾT ---");
+        console.log("Sách: " + tenSach);
+        console.log("Năm xuất bản: " + namXuatBan);
+        console.log("Tuổi của sách: " + tuoiSach + " năm");
+
+        document.write("<h3>Kết quả tính toán:</h3>");
+        document.write("Sách: " + tenSach + "<br>");
+        document.write("Năm xuất bản: " + namXuatBan + "<br>");
+        document.write("<strong>Tuổi của sách: " + tuoiSach + " năm</strong>");
+    </script>
+
+</body>
+</html>
